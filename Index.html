@@ -13,21 +13,30 @@
     <!--Iconos de Google-->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <title>Astro Fans</title>
-<body>
-    <nav>
-        <div class="nav-wrapper grey darken-4">
-            <a href="#!" class="brand-logo center">Astro Fans</a>
-            <ul clas="left">
-            <!-- Dropdown Trigger -->
-            <li><a href=""><i class="material-icons">all_inclusive</i></a></li>
-            </ul>
-        </div>
-    </nav>
-    <!--Seccion 1-->
+<body class="grey lighten-4">
+    <!--barra de pagina-->
+    <ul id="Menu" class="dropdown-content">
+        <li><a href="#Segundo" class="black-text">Introduccion</a></li>
+        <li><a href="#Horoscopo" class="black-text">Horoscopo</a></li>
+        <li><a href="#Video" class="black-text">Video</a></li>
+        <li class="divider"></li>
+        <li><a href="#Registro" class="black-text">Registro</a></li>
+    </ul>
+    <div class="navbar-fixed">
+        <nav>
+            <div class="nav-wrapper grey darken-4">
+                <a href="#!" class="brand-logo center">Astro Fans</a>
+                <ul class="left hide-on-med-and-down">
+                    <li><a class="dropdown-trigger" href="#!" data-target="Menu">Menu<i class="material-icons left">all_inclusive</i></a></li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+    <!--Imagenes Seccion 1-->
     <div class="row">
-        <div class="col s12 m9 l10">
+        <div class="col s12">
             <div id="introduccion" class="section scrollspy">
-                <div class="carousel carousel-slider">
+                <div class="carousel carousel-slider hoverable">
                     <a href="" class="carousel-item">
                         <img src="https://i.pinimg.com/originals/ef/16/d1/ef16d1f5e416dd13404efa94df8a1da7.jpg" alt="Imagen de las Estrellas">
                     </a>
@@ -38,46 +47,237 @@
                         <img src="https://c.wallhere.com/photos/e4/c3/1600x900_px_galaxy_Milky_night_rock_sky_space_stars-1778855.jpg!d" alt="Imagen de las Estrellas">
                     </a>
                 </div>
+            </div>
         </div>
-        <div id="Segundo" class="section scrollspy">
-            <div class="row">
-                <div class="col s6">
-                    <div class="card">
-                        <div class="card_content">
-                            <h3>Inserte Titulo</h3>
-                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae rerum, similique deleniti ratione autem dolore amet totam nemo nulla? Laboriosam sunt a dolorum esse commodi exercitationem error dicta, quasi possimus quo inventore non facere minus aliquid laborum asperiores doloremque molestiae ipsam dolores alias odit. Odio voluptates possimus ipsum explicabo molestias.</p>
-                        </div>
-                        <div class="card_action">
-                            <a href="#">Enlace</a>
-                        </div>
+    </div>
+    <!--Introduccion-->
+    <div id="Segundo" class="section scrollspy z-depth-2 hoverable">
+        <div class="row">
+            <div class="container center">
+                <div class="col s12">
+                    <h3 class="black-text">Introducción</h3>
+                    <p class="blck-text valing wrapper font-roboto">Las constelaciones son agrupaciones de estrellas que se pueden observar desde la Tierra y que han sido reconocidas y nombradas por las culturas humanas a lo largo de la historia. Estas agrupaciones de estrellas se utilizan como una forma de orientación y navegación en el cielo nocturno.<br><br>Las constelaciones pueden ser vistas desde diferentes partes del mundo, pero sus nombres y formas pueden variar según la cultura y la época. En la actualidad, existen 88 constelaciones reconocidas oficialmente por la Unión Astronómica Internacional (IAU, por sus siglas en inglés).
+                        <br><br>Además de su valor práctico para la navegación, las constelaciones también tienen un valor cultural y artístico. A lo largo de la historia, las constelaciones han sido representadas en diferentes formas de arte, desde la pintura y la escultura hasta la literatura y la música.
+                        <br><br>El estudio de las constelaciones es una parte importante de la astronomía y nos permite entender mejor la estructura y la dinámica del universo en el que vivimos.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Cartas Seccion 2-->
+    <div class="section scrollspy">
+        <div class="row">
+            <div class="col s6">
+                <div class="card hoverable">
+                    <div class="card-image">
+                        <img src="https://i0.wp.com/elmundoderegina.com/wp-content/uploads/2019/03/signo.jpg?fit=900%2C500&ssl=1">
+                        <span class="card-title">¿Astros que son?</span>
+                    </div>
+                    <div class="card-content">
+                        <p>los astros son objetos celestes que se encuentran en el universo y que se pueden observar desde la Tierra. Estos objetos pueden ser estrellas, planetas, satélites, cometas, asteroides, meteoroides, y cualquier otro cuerpo celeste que se encuentre fuera de nuestro planeta.</p>
+                    </div>
+                    <div class="card-action">
+                        <a href="#">Mas Info</a>
                     </div>
                 </div>
-                <div class="col s6">
-                    <div class="card">
-                        <div class="card_content">
-                            <h3>Inserte Titulo</h3>
-                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae rerum, similique deleniti ratione autem dolore amet totam nemo nulla? Laboriosam sunt a dolorum esse commodi exercitationem error dicta, quasi possimus quo inventore non facere minus aliquid laborum asperiores doloremque molestiae ipsam dolores alias odit. Odio voluptates possimus ipsum explicabo molestias.</p>
-                        </div>
-                        <div class="card_action">
-                            <a href="#">Enlace</a>
-                        </div>
+            </div>
+            <div class="col s6">
+                <div class="card hoverable">
+                    <div class="card-image">
+                        <img src="https://jahari88.files.wordpress.com/2017/11/galaxia-y-sistema-solar.jpg">
+                        <span class="card-title">¿Para que sirven?</span>
+                    </div>
+                    <div class="card-content">
+                        <p>Los astros son objetos fascinantes y su estudio nos permite comprender la estructura, la evolución y la dinámica del universo en el que vivimos. Además, nos permiten explorar las posibilidades de vida en otros planetas y entender la complejidad de la formación de sistemas planetarios.</p>
+                    </div>
+                    <div class="card-action">
+                        <a href="#">Mas Info</a>
                     </div>
                 </div>
             </div>
         </div>
-        <div id="Tercero" class="section scrollspy">
-            <h3>Tercero</h3>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusamus debitis illum nisi neque amet mollitia quasi vero rem harum laborum obcaecati impedit, consequuntur vel perspiciatis consequatur sed, error, possimus ipsum rerum. Eos aliquam neque sequi error dolor voluptatem temporibus nostrum, unde tempora, quam quas at. Provident natus officia exercitationem, molestiae a, recusandae quae amet eius quas, dolores ut voluptatum rem corrupti asperiores. Iusto placeat optio ad incidunt ullam libero architecto repudiandae fugit pariatur dolor iure minus illo cupiditate atque, eligendi ab a vel iste debitis assumenda, non soluta? Error numquam recusandae earum quis, totam provident consequatur nihil aut, quaerat vitae consectetur et animi, nisi doloribus dolore obcaecati facilis voluptate libero ullam ipsa assumenda consequuntur unde? Laboriosam alias adipisci illo numquam quis, ipsa fuga dolore accusantium est incidunt saepe ea labore aspernatur error similique eius autem aut eveniet fugiat qui. Illum perspiciatis temporibus, eius ipsam reprehenderit quisquam sint ex illo totam! Odit, perspiciatis dolor. Laborum qui nulla nostrum similique, minus sed deserunt voluptatum quis omnis quae assumenda praesentium saepe, incidunt blanditiis dignissimos? Aliquid impedit reprehenderit cupiditate exercitationem nam saepe, corrupti id quis, aliquam voluptatum facilis ipsam vel molestiae unde consequuntur omnis assumenda voluptatem optio provident pariatur praesentium. Dolor itaque nam, ipsam neque tenetur nulla enim iste explicabo, possimus pariatur at exercitationem, architecto quam facilis modi sunt dignissimos totam! Culpa totam eum iusto molestiae hic, iste dolor maxime qui. Animi reprehenderit voluptates magni in itaque inventore laborum quod tenetur, quo ullam tempore facilis vitae, alias vel impedit! Recusandae sequi non quam harum reiciendis. Accusantium nostrum molestiae obcaecati necessitatibus sint debitis dolores sed sit, doloremque exercitationem repellat magni temporibus, officiis esse velit voluptatum dolorum provident unde iusto voluptas libero pariatur vitae! Quod, doloribus delectus alias expedita laborum, quis, sequi voluptatem dignissimos eveniet nobis inventore aspernatur a? Eum labore commodi facere veritatis ipsa molestias iste velit maiores ducimus itaque numquam voluptatibus, eaque nostrum soluta dolore illo quae totam pariatur obcaecati culpa expedita, dolorem nobis, molestiae quasi. Voluptates voluptatum blanditiis reprehenderit perspiciatis consectetur dolorem facere iste vitae, nobis ratione non aliquid recusandae debitis maxime magni earum beatae ut sed cupiditate tenetur consequatur quaerat. Iusto obcaecati totam voluptatem mollitia dolorem quod distinctio autem quae ullam, aut modi dicta, laudantium eos cumque ad corrupti est corporis? Beatae tempore natus ea. Et illum deserunt aspernatur similique, vero unde mollitia modi nostrum! Dolores doloribus, sit consequuntur magnam maxime atque distinctio, ullam nemo aut molestiae vel tempora eos fugiat autem numquam recusandae, voluptates voluptas consectetur maiores! Molestias dolores voluptatibus nemo exercitationem at, cumque repudiandae, non culpa, adipisci ea impedit delectus accusamus? Iusto magnam, incidunt blanditiis unde perspiciatis debitis, vero sapiente aut soluta dignissimos maxime maiores nostrum dolorum libero nobis ipsa eum a alias commodi. Excepturi cum asperiores, soluta error repudiandae fugit corporis? Autem beatae vero corporis suscipit incidunt animi corrupti, atque est, porro laudantium voluptas. Voluptatibus dolorem ad error non explicabo eligendi, quasi excepturi, ducimus officia amet saepe rem expedita sequi esse unde quas adipisci aliquid, vero voluptatum autem corporis eum fugit. Dolores deserunt repellendus quis sint perspiciatis voluptatem eos aspernatur ea cupiditate rem iure eligendi asperiores aliquid, officia quibusdam adipisci aliquam. Laborum accusamus maxime perspiciatis, quos, magni praesentium aut illo molestiae nulla sed facilis. Error eligendi illo delectus odit facere excepturi sed reiciendis fugiat doloribus, non architecto saepe nemo aliquid, iusto corrupti nostrum culpa enim iste dolore aspernatur tenetur nobis voluptatum. Tempore, ipsam, ducimus voluptate voluptas odit accusantium similique, excepturi eum unde deserunt odio consequuntur? Autem error dignissimos libero veritatis et, asperiores nobis? Error minus nam, voluptatibus eligendi tempore obcaecati accusamus molestiae quo vel excepturi reiciendis eos illo asperiores mollitia sapiente iste dolores fugiat aliquid voluptate ab! Vero pariatur ullam fuga itaque deserunt iure sunt quia optio modi. Amet, officiis facere aliquam maiores unde consequuntur perferendis velit placeat reiciendis similique nobis repellendus, fugiat commodi ipsam voluptatibus ut esse saepe magni, deleniti ipsa. Distinctio accusantium ex eligendi quae, aspernatur, ut animi in blanditiis maiores autem nam quas nulla. Debitis facere suscipit praesentium repellendus consectetur rerum dolores consequatur voluptatibus possimus, expedita sed dicta? Ea consequatur at omnis. Consequatur molestiae soluta, rem porro velit aliquid tempore aut sequi sit facere minima cupiditate maxime maiores? Quo dolorum obcaecati dolor vel praesentium est. Tenetur enim voluptas iure non voluptate veniam nobis dolores excepturi, dicta, culpa dignissimos nam soluta eos ullam rerum tempore deserunt natus quis rem. Quos molestias labore, ex odit libero rem natus saepe tenetur ab laboriosam aperiam ipsa eius quia nemo laudantium, suscipit eaque. Laboriosam aut sit, exercitationem sapiente necessitatibus distinctio pariatur placeat, eligendi minus voluptas ad accusamus dicta quidem odio? Earum, magni sint ut ducimus rem doloremque accusantium sequi cum at quos totam atque consequatur illum aut fuga. Iste accusamus, excepturi eaque ratione earum id perferendis esse voluptatem! Cumque dolores voluptate sequi aliquam reprehenderit quam amet quos possimus molestias nulla, error perspiciatis, deleniti fuga! Quasi modi saepe dolores placeat deleniti laudantium, quo, alias illum minus dolorem aperiam eligendi eius veniam consectetur laborum mollitia velit repellendus asperiores maxime pariatur. Dolores, provident possimus aliquid ipsum facilis fugiat dolorum voluptate reiciendis minus facere esse saepe, nisi ullam omnis at nostrum in vitae velit! Doloribus pariatur voluptatum natus illum. Similique natus consequuntur commodi dolorem ut nulla, non iste expedita consectetur molestias voluptatem deserunt minus reiciendis sit laudantium culpa quod consequatur totam! Beatae, doloremque magnam minus ratione explicabo quis vel molestiae similique nisi est deleniti consequatur ipsa aliquid quidem culpa autem inventore cum sapiente eveniet commodi? Dicta hic quibusdam, sit voluptatum vero sunt perferendis dolorum perspiciatis labore quas. Consequuntur aperiam quaerat consequatur veritatis suscipit quis, reprehenderit voluptatem delectus veniam cupiditate dolore soluta deleniti est error autem aut. Pariatur perspiciatis atque laudantium illo! Excepturi eos aliquid cum! Eum, quibusdam! Saepe ullam nulla unde ipsam corrupti, est autem commodi ducimus. Officiis natus reiciendis delectus recusandae alias ducimus architecto ea. Nostrum, quas similique necessitatibus officia consectetur doloremque atque, rem culpa laboriosam libero ea quod exercitationem! Debitis, laboriosam. Ullam aspernatur exercitationem, doloribus atque ab temporibus sequi labore suscipit aliquam tempore eaque voluptatem. Laborum cum recusandae enim fugit officiis necessitatibus consequuntur repellendus quae placeat, ipsa, porro odit. Eius blanditiis quam iusto.</p>
+    </div>
+    <div id="Horoscopo" class="section scrollspy z-depth-2 hoverable">
+        <div class="row">
+            <div class="container center">
+                <div class="col s12">
+                    <h3 class="black-text">Horoscopo</h3>
+                    <p class="blck-text valing wrapper">
+                        El horóscopo es un método de predicción astrológica que se basa en la posición de los planetas, el Sol y la Luna en el momento del nacimiento de una persona o en una fecha específica, para hacer pronósticos sobre el futuro y para obtener información sobre la personalidad de un individuo.
+                        <br><br>El horóscopo se divide en doce signos zodiacales, cada uno de los cuales se asocia con una constelación en particular. El horóscopo se basa en la idea de que la posición de los cuerpos celestes en el momento del nacimiento o en un momento específico influye en la personalidad y el destino de una persona.
+                    </p>
+                </div>
+            </div>
         </div>
     </div>
-    <!--Indice-->
-    <div class="col hide-on-small-only m3 l2">
-        <div class="pinned">
-            <ul class="section table-of-contents">
-                <li><a href="#introduccion">Inicio</a></li>
-                <li><a href="#Segundo">Introduccion</a></li>
-                <li><a href="#Tercero">Tercero</a></li>
-            </ul>
+    <!--Horoscopo-->
+    <div class="row">
+        <div class="col s6">
+            <div class="card-panel grey lighten-5 z-depth-1 hoverable">
+                <div class="row valign-wrapper">
+                    <div class="col s2">
+                        <img src="imgs/aries.ico" alt="" class="responsive-img"> <!-- notice the "circle" class -->
+                    </div>
+                    <div class="col s10">
+                        <span class="black-text">
+                            Aries:<br><br>El primer signo del zodiaco se asocia con la energía, la iniciativa y la aventura.
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col s6">
+            <div class="card-panel grey lighten-5 z-depth-1 hoverable">
+                <div class="row valign-wrapper">
+                    <div class="col s2">
+                        <img src="imgs/tauro.ico" alt="" class="responsive-img"> <!-- notice the "circle" class -->
+                    </div>
+                    <div class="col s10">
+                        <span class="black-text">
+                            Tauro:<br><br>El segundo signo representa la estabilidad, la lealtad, la paciencia y la perseverancia.
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col s6">
+            <div class="card-panel grey lighten-5 z-depth-1 hoverable">
+                <div class="row valign-wrapper">
+                    <div class="col s2">
+                        <img src="imgs/geminis.ico" alt="" class="responsive-img"> <!-- notice the "circle" class -->
+                    </div>
+                    <div class="col s10">
+                        <span class="black-text">
+                            Géminis:<br><br>El tercer signo se relaciona con la comunicación, la curiosidad y la versatilidad.
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col s6">
+            <div class="card-panel grey lighten-5 z-depth-1 hoverable">
+                <div class="row valign-wrapper">
+                    <div class="col s2">
+                        <img src="imgs/cancer.ico" alt="" class="responsive-img"> <!-- notice the "circle" class -->
+                    </div>
+                    <div class="col s10">
+                        <span class="black-text">
+                            Cáncer:<br><br>El cuarto signo representa la sensibilidad, la intuición y la protección emocional.
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col s6">
+            <div class="card-panel grey lighten-5 z-depth-1 hoverable">
+                <div class="row valign-wrapper">
+                    <div class="col s2">
+                        <img src="imgs/leon.ico" alt="" class="responsive-img"> <!-- notice the "circle" class -->
+                    </div>
+                    <div class="col s10">
+                        <span class="black-text">
+                            Leo:<br><br>El quinto signo se relaciona con la creatividad, el liderazgo y la confianza.
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col s6">
+            <div class="card-panel grey lighten-5 z-depth-1 hoverable">
+                <div class="row valign-wrapper">
+                    <div class="col s2">
+                        <img src="imgs/virgo.ico" alt="" class="responsive-img"> <!-- notice the "circle" class -->
+                    </div>
+                    <div class="col s10">
+                        <span class="black-text">
+                            Virgo:<br><br>El sexto signo representa la organización, la atención al detalle y la eficiencia.
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col s6">
+            <div class="card-panel grey lighten-5 z-depth-1 hoverable">
+                <div class="row valign-wrapper">
+                    <div class="col s2">
+                        <img src="imgs/libra.ico" alt="" class="responsive-img"> <!-- notice the "circle" class -->
+                    </div>
+                    <div class="col s10">
+                        <span class="black-text">
+                            Libra:<br><br>El séptimo signo se asocia con la armonía, la diplomacia y el equilibrio.
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col s6">
+            <div class="card-panel grey lighten-5 z-depth-1 hoverable">
+                <div class="row valign-wrapper">
+                    <div class="col s2">
+                        <img src="imgs/escorpion.ico" alt="" class="responsive-img"> <!-- notice the "circle" class -->
+                    </div>
+                    <div class="col s10">
+                        <span class="black-text">
+                            Escorpio:<br><br>El octavo signo se relaciona con la intensidad, la pasión y la transformación personal.
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col s6">
+            <div class="card-panel grey lighten-5 z-depth-1 hoverable">
+                <div class="row valign-wrapper">
+                    <div class="col s2">
+                        <img src="imgs/sagitario.ico" alt="" class="responsive-img"> <!-- notice the "circle" class -->
+                    </div>
+                    <div class="col s10">
+                        <span class="black-text">
+                            Sagitario:<br><br>El noveno signo representa la libertad, la aventura y el optimismo.
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col s6">
+            <div class="card-panel grey lighten-5 z-depth-1 hoverable">
+                <div class="row valign-wrapper">
+                    <div class="col s2">
+                        <img src="imgs/capricornio (1).ico" alt="" class="responsive-img"> <!-- notice the "circle" class -->
+                    </div>
+                    <div class="col s10">
+                        <span class="black-text">
+                            Capricornio:<br><br>El décimo signo se asocia con la ambición, la responsabilidad y la disciplina.
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col s6">
+            <div class="card-panel grey lighten-5 z-depth-1 hoverable">
+                <div class="row valign-wrapper">
+                    <div class="col s2">
+                        <img src="imgs/acuario.ico" alt="" class="responsive-img"> <!-- notice the "circle" class -->
+                    </div>
+                    <div class="col s10">
+                        <span class="black-text">
+                            Acuario:<br><br>El undécimo signo representa la originalidad, la independencia y la humanidad.
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col s6">
+            <div class="card-panel grey lighten-5 z-depth-1 hoverable">
+                <div class="row valign-wrapper">
+                    <div class="col s2">
+                        <img src="imgs/piscis.ico" alt="" class="responsive-img"> <!-- notice the "circle" class -->
+                    </div>
+                    <div class="col s10">
+                        <span class="black-text">
+                            Piscis:<br><br>El duodécimo signo se relaciona con la sensibilidad, la compasión y la conexión emocional con los demás.
+                        </span>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
     <!--Boton Flotante-->
@@ -86,14 +286,29 @@
             <i class="large material-icons">expand_less</i>
         </a>
         <ul>
-            <li><a href="#Registro" class="btn-floating grey darken-4"><i class="material-icons">attach_file</i></a></li>
+            <li><a href="https://instagram.com/astronomia?igshid=YmMyMTA2M2Y=" class="btn-floating grey darken-4"><i class="material-icons">camera_alt</i></a></li>
         </ul>
     </div>
-    <!--Elemento acordeon-->
+    <div id="Video" class="section scrollspy z-depth-2 hoverable">
+        <div class="row">
+            <div class="container center">
+                <div class="col s12">
+                    <h3 class="black-text">Explicacion del Horoscopo</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Video-->
+    <div class="container">
+        <div class="video-container">
+            <iframe width="853" height="480" src="vid/Astrología_ por qué nos sirve para entender el mundo actual.mp4" frameborder="0" allowfullscreen></iframe>
+        </div>
+    </div>
+    <!--Registro-->
     <div class="col m12">
-        <ul class="collapsible popout" id="Registro">
+        <ul class="collapsible popout section scrollspy" id="Registro">
             <li>
-            <div class="collapsible-header"><i class="material-icons">filter_drama</i>Registro</div>
+            <div class="collapsible-header black-text"><i class="material-icons">filter_drama</i>Registro</div>
             <div class="collapsible-body grey lighten-3">
                 <div class="row"> 
                     <form class="col s12">
@@ -110,7 +325,7 @@
                                 <input type="email" placeholder="Ingrese su Email" id="Email">
                                 <label for="Email">Email</label>
                             </div>
-                            <button class="btn waves-effect waves-light" type="submit" name="action">Enviar
+                            <button class="btn waves-effect grey" type="submit" name="action">Enviar
                                 <i class="material-icons right">send</i>
                             </button>
                         </div>
@@ -120,21 +335,40 @@
             </li>
         </ul>
     </div>
-    <!--Segundo Elemento-->
-
-<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-<script>
-document.addEventListener('DOMContentLoaded', function() {
-    M.AutoInit();
-    var elems = document.querySelectorAll('.scrollspy');
-    var instances = M.ScrollSpy.init(elems, {scrollOffset: 0});
-    });
-</script>
-<script>
+    <!--Pie de Pagina-->
+    <footer class="page-footer grey darken-4">
+        <div class="container">
+            <div class="row">
+                <div class="col l6 s12">
+                    <h5 class="white-text">Explora el Universo<br></h5>
+                    <a class="grey-text" href="https://policies.google.com/terms?hl=es">Terminos de Condiciones</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright">
+            <div class="container">
+                © 2023 Copyright Text
+                <a class="grey-text right" href="#!">Astro Fans</a>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script>
     document.addEventListener('DOMContentLoaded', function() {
-    var elems = document.querySelectorAll('.carousel');
-    var instances = M.Carousel.init(elems, {indicators: true});
-    });
-</script>
+        M.AutoInit();
+        });
+    </script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+        var elems = document.querySelectorAll('.carousel');
+        var instances = M.Carousel.init(elems, {indicators: true});
+        });
+    </script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var elems = document.querySelectorAll('.scrollspy');
+            var instances = M.ScrollSpy.init(elems,{scrollOffset: 0});
+        });
+    </script>
 </body>
 </html>   
