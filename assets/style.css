@@ -1,0 +1,132 @@
+body {
+    background-color: #eeeeee;
+    color: #000000;
+    font-size: 16px;
+}
+
+h1, p {
+    transition: font-size 0.3s ease;
+}
+
+body.contraste {
+    background-color: #000000;
+    color: #ffffff;
+}
+
+.nav-wrapper {
+    background-color: #6e6e6e;
+    color: #333;
+}
+.contraste .nav-wrapper {
+    background-color: #000000;
+    color: #ffffff;
+}
+
+.footer {
+    background-color: #eeeeee;
+    color: #333;
+}
+.contraste .footer {
+    background-color: #333;
+    color: #fff;
+}
+
+.card {
+    background-color: #eeeeee;
+    color: #333;
+}
+.contraste .card {
+    background-color: #333;
+    color: #fff;
+}
+
+.page-footer {
+    background-color: #212121;
+    color: #333;
+}
+.contraste .page-footer {
+    background-color: #000000;
+    color: #fff;
+}
+
+.collapsible-header {
+    background-color: #333;
+    color: #fff;
+}
+.contraste .collapsible-header {
+    background-color: #d3d3d3;
+    color: #333;
+}
+
+.collapsible-body {
+    background-color: #eeeeee;
+    color: #333;
+}
+
+.contraste .collapsible-body {
+    background-color: #333;
+    color: #fff;
+}
+
+.card-panel {
+    background-color: #eeeeee;
+    color: #333;
+}
+.contraste .card-panel {
+    background-color: #333;
+    color: #fff;
+}
+
+.btn-floating {
+    background-color: #333;
+    color: #eeeeee;
+}
+
+.dropdown-trigger {
+    background-color: #6e6e6e;
+    color: #000000;
+}
+.contraste .dropdown-trigger {
+    background-color: #000000;
+    color: #ffffff;
+}
+
+.dropdown-content {
+    background-color: #ffffff;
+    color: #000000;
+}
+.contraste .dropdown-content {
+    background-color: #000000;
+    color: #ffffff;
+}
+
+.dividier {
+    background-color: #ffffff;
+    color: #000000;
+}
+.contraste .divider {
+    background-color: #000000;
+    color: #ffffff;
+}
+
+/*bordeado de los input Validables*/
+input:invalid {
+    border-color: red;
+}
+
+.btn {
+    background-color: #6e6e6e;
+    color: #000000;
+}
+.contraste .btn {
+    background-color: #000000;
+    color: #ffffff;
+}
+
+input {
+    color: #000000;
+}
+
+.contraste input {
+    color: #ffffff;
+}

@@ -5,30 +5,37 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!--Reseet-->
-    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="assets/reset.css">
     <!--Materialize-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <!--Encabezado Superior de la Pagina-->
     <link rel="Icon" href="imgs/Icono.ico">
     <!--Iconos de Google-->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Enlace de Style-->
+    <link rel="stylesheet" href="assets/style.css">
     <title>Astro Fans</title>
-<body class="grey lighten-4">
+<body>
     <!--barra de pagina-->
     <ul id="Menu" class="dropdown-content">
-        <li><a href="#Segundo" class="black-text">Introduccion</a></li>
-        <li><a href="#Horoscopo" class="black-text">Horoscopo</a></li>
-        <li><a href="#Video" class="black-text">Video</a></li>
+        <li><a href="#Segundo">Introduccion</a></li>
+        <li><a href="#Horoscopo">Horoscopo</a></li>
+        <li><a href="#Video">Video</a></li>
         <li class="divider"></li>
-        <li><a href="#Registro" class="black-text">Registro</a></li>
+        <li><a href="#Registro">Registro</a></li>
     </ul>
     <div class="navbar-fixed">
         <nav>
-            <div class="nav-wrapper grey darken-4">
+            <div class="nav-wrapper">
                 <a href="#!" class="brand-logo center">Astro Fans</a>
                 <ul class="left hide-on-med-and-down">
                     <li><a class="dropdown-trigger" href="#!" data-target="Menu">Menu<i class="material-icons left">all_inclusive</i></a></li>
                 </ul>
+                <!--Botones-->
+                <div class="right">
+                    <button id="cambiarContraste" class="btn waves-effect waves-red">Cambiar Contraste</button>
+                    <button id="cambiarBtn" class="btn waves-effect waves-red">Cambiar tamaño de fuente</button>
+                </div>
             </div>
         </nav>
     </div>
@@ -55,8 +62,8 @@
         <div class="row">
             <div class="container center">
                 <div class="col s12">
-                    <h3 class="black-text">Introducción</h3>
-                    <p class="blck-text valing wrapper font-roboto">Las constelaciones son agrupaciones de estrellas que se pueden observar desde la Tierra y que han sido reconocidas y nombradas por las culturas humanas a lo largo de la historia. Estas agrupaciones de estrellas se utilizan como una forma de orientación y navegación en el cielo nocturno.<br><br>Las constelaciones pueden ser vistas desde diferentes partes del mundo, pero sus nombres y formas pueden variar según la cultura y la época. En la actualidad, existen 88 constelaciones reconocidas oficialmente por la Unión Astronómica Internacional (IAU, por sus siglas en inglés).
+                    <h3>Introducción</h3>
+                    <p class="valing wrapper font-roboto">Las constelaciones son agrupaciones de estrellas que se pueden observar desde la Tierra y que han sido reconocidas y nombradas por las culturas humanas a lo largo de la historia. Estas agrupaciones de estrellas se utilizan como una forma de orientación y navegación en el cielo nocturno.<br><br>Las constelaciones pueden ser vistas desde diferentes partes del mundo, pero sus nombres y formas pueden variar según la cultura y la época. En la actualidad, existen 88 constelaciones reconocidas oficialmente por la Unión Astronómica Internacional (IAU, por sus siglas en inglés).
                         <br><br>Además de su valor práctico para la navegación, las constelaciones también tienen un valor cultural y artístico. A lo largo de la historia, las constelaciones han sido representadas en diferentes formas de arte, desde la pintura y la escultura hasta la literatura y la música.
                         <br><br>El estudio de las constelaciones es una parte importante de la astronomía y nos permite entender mejor la estructura y la dinámica del universo en el que vivimos.</p>
                 </div>
@@ -75,9 +82,6 @@
                     <div class="card-content">
                         <p>los astros son objetos celestes que se encuentran en el universo y que se pueden observar desde la Tierra. Estos objetos pueden ser estrellas, planetas, satélites, cometas, asteroides, meteoroides, y cualquier otro cuerpo celeste que se encuentre fuera de nuestro planeta.</p>
                     </div>
-                    <div class="card-action">
-                        <a href="#">Mas Info</a>
-                    </div>
                 </div>
             </div>
             <div class="col s6">
@@ -89,19 +93,17 @@
                     <div class="card-content">
                         <p>Los astros son objetos fascinantes y su estudio nos permite comprender la estructura, la evolución y la dinámica del universo en el que vivimos. Además, nos permiten explorar las posibilidades de vida en otros planetas y entender la complejidad de la formación de sistemas planetarios.</p>
                     </div>
-                    <div class="card-action">
-                        <a href="#">Mas Info</a>
-                    </div>
                 </div>
             </div>
         </div>
     </div>
-    <div id="Horoscopo" class="section scrollspy z-depth-2 hoverable">
+    <!--Comentario Horoscopo-->
+    <div id="Horoscopo" class="section scrollspy z-depth-3 hoverable">
         <div class="row">
             <div class="container center">
                 <div class="col s12">
-                    <h3 class="black-text">Horoscopo</h3>
-                    <p class="blck-text valing wrapper">
+                    <h3>Horoscopo</h3>
+                    <p class="valing wrapper">
                         El horóscopo es un método de predicción astrológica que se basa en la posición de los planetas, el Sol y la Luna en el momento del nacimiento de una persona o en una fecha específica, para hacer pronósticos sobre el futuro y para obtener información sobre la personalidad de un individuo.
                         <br><br>El horóscopo se divide en doce signos zodiacales, cada uno de los cuales se asocia con una constelación en particular. El horóscopo se basa en la idea de que la posición de los cuerpos celestes en el momento del nacimiento o en un momento específico influye en la personalidad y el destino de una persona.
                     </p>
@@ -112,13 +114,13 @@
     <!--Horoscopo-->
     <div class="row">
         <div class="col s6">
-            <div class="card-panel grey lighten-5 z-depth-1 hoverable">
+            <div class="card-panel z-depth-3 hoverable">
                 <div class="row valign-wrapper">
                     <div class="col s2">
                         <img src="imgs/aries.ico" alt="" class="responsive-img"> <!-- notice the "circle" class -->
                     </div>
                     <div class="col s10">
-                        <span class="black-text">
+                        <span>
                             Aries:<br><br>El primer signo del zodiaco se asocia con la energía, la iniciativa y la aventura.
                         </span>
                     </div>
@@ -126,13 +128,13 @@
             </div>
         </div>
         <div class="col s6">
-            <div class="card-panel grey lighten-5 z-depth-1 hoverable">
+            <div class="card-panel z-depth-1 hoverable">
                 <div class="row valign-wrapper">
                     <div class="col s2">
                         <img src="imgs/tauro.ico" alt="" class="responsive-img"> <!-- notice the "circle" class -->
                     </div>
                     <div class="col s10">
-                        <span class="black-text">
+                        <span>
                             Tauro:<br><br>El segundo signo representa la estabilidad, la lealtad, la paciencia y la perseverancia.
                         </span>
                     </div>
@@ -140,13 +142,13 @@
             </div>
         </div>
         <div class="col s6">
-            <div class="card-panel grey lighten-5 z-depth-1 hoverable">
+            <div class="card-panel z-depth-1 hoverable">
                 <div class="row valign-wrapper">
                     <div class="col s2">
                         <img src="imgs/geminis.ico" alt="" class="responsive-img"> <!-- notice the "circle" class -->
                     </div>
                     <div class="col s10">
-                        <span class="black-text">
+                        <span>
                             Géminis:<br><br>El tercer signo se relaciona con la comunicación, la curiosidad y la versatilidad.
                         </span>
                     </div>
@@ -154,13 +156,13 @@
             </div>
         </div>
         <div class="col s6">
-            <div class="card-panel grey lighten-5 z-depth-1 hoverable">
+            <div class="card-panel z-depth-1 hoverable">
                 <div class="row valign-wrapper">
                     <div class="col s2">
                         <img src="imgs/cancer.ico" alt="" class="responsive-img"> <!-- notice the "circle" class -->
                     </div>
                     <div class="col s10">
-                        <span class="black-text">
+                        <span>
                             Cáncer:<br><br>El cuarto signo representa la sensibilidad, la intuición y la protección emocional.
                         </span>
                     </div>
@@ -168,13 +170,13 @@
             </div>
         </div>
         <div class="col s6">
-            <div class="card-panel grey lighten-5 z-depth-1 hoverable">
+            <div class="card-panel z-depth-1 hoverable">
                 <div class="row valign-wrapper">
                     <div class="col s2">
                         <img src="imgs/leon.ico" alt="" class="responsive-img"> <!-- notice the "circle" class -->
                     </div>
                     <div class="col s10">
-                        <span class="black-text">
+                        <span>
                             Leo:<br><br>El quinto signo se relaciona con la creatividad, el liderazgo y la confianza.
                         </span>
                     </div>
@@ -182,13 +184,13 @@
             </div>
         </div>
         <div class="col s6">
-            <div class="card-panel grey lighten-5 z-depth-1 hoverable">
+            <div class="card-panel z-depth-1 hoverable">
                 <div class="row valign-wrapper">
                     <div class="col s2">
                         <img src="imgs/virgo.ico" alt="" class="responsive-img"> <!-- notice the "circle" class -->
                     </div>
                     <div class="col s10">
-                        <span class="black-text">
+                        <span>
                             Virgo:<br><br>El sexto signo representa la organización, la atención al detalle y la eficiencia.
                         </span>
                     </div>
@@ -196,13 +198,13 @@
             </div>
         </div>
         <div class="col s6">
-            <div class="card-panel grey lighten-5 z-depth-1 hoverable">
+            <div class="card-panel z-depth-1 hoverable">
                 <div class="row valign-wrapper">
                     <div class="col s2">
                         <img src="imgs/libra.ico" alt="" class="responsive-img"> <!-- notice the "circle" class -->
                     </div>
                     <div class="col s10">
-                        <span class="black-text">
+                        <span>
                             Libra:<br><br>El séptimo signo se asocia con la armonía, la diplomacia y el equilibrio.
                         </span>
                     </div>
@@ -210,13 +212,13 @@
             </div>
         </div>
         <div class="col s6">
-            <div class="card-panel grey lighten-5 z-depth-1 hoverable">
+            <div class="card-panel z-depth-1 hoverable">
                 <div class="row valign-wrapper">
                     <div class="col s2">
                         <img src="imgs/escorpion.ico" alt="" class="responsive-img"> <!-- notice the "circle" class -->
                     </div>
                     <div class="col s10">
-                        <span class="black-text">
+                        <span>
                             Escorpio:<br><br>El octavo signo se relaciona con la intensidad, la pasión y la transformación personal.
                         </span>
                     </div>
@@ -224,13 +226,13 @@
             </div>
         </div>
         <div class="col s6">
-            <div class="card-panel grey lighten-5 z-depth-1 hoverable">
+            <div class="card-panel z-depth-1 hoverable">
                 <div class="row valign-wrapper">
                     <div class="col s2">
                         <img src="imgs/sagitario.ico" alt="" class="responsive-img"> <!-- notice the "circle" class -->
                     </div>
                     <div class="col s10">
-                        <span class="black-text">
+                        <span>
                             Sagitario:<br><br>El noveno signo representa la libertad, la aventura y el optimismo.
                         </span>
                     </div>
@@ -238,13 +240,13 @@
             </div>
         </div>
         <div class="col s6">
-            <div class="card-panel grey lighten-5 z-depth-1 hoverable">
+            <div class="card-panel z-depth-1 hoverable">
                 <div class="row valign-wrapper">
                     <div class="col s2">
                         <img src="imgs/capricornio (1).ico" alt="" class="responsive-img"> <!-- notice the "circle" class -->
                     </div>
                     <div class="col s10">
-                        <span class="black-text">
+                        <span>
                             Capricornio:<br><br>El décimo signo se asocia con la ambición, la responsabilidad y la disciplina.
                         </span>
                     </div>
@@ -252,13 +254,13 @@
             </div>
         </div>
         <div class="col s6">
-            <div class="card-panel grey lighten-5 z-depth-1 hoverable">
+            <div class="card-panel z-depth-1 hoverable">
                 <div class="row valign-wrapper">
                     <div class="col s2">
                         <img src="imgs/acuario.ico" alt="" class="responsive-img"> <!-- notice the "circle" class -->
                     </div>
                     <div class="col s10">
-                        <span class="black-text">
+                        <span>
                             Acuario:<br><br>El undécimo signo representa la originalidad, la independencia y la humanidad.
                         </span>
                     </div>
@@ -266,13 +268,13 @@
             </div>
         </div>
         <div class="col s6">
-            <div class="card-panel grey lighten-5 z-depth-1 hoverable">
+            <div class="card-panel z-depth-1 hoverable">
                 <div class="row valign-wrapper">
                     <div class="col s2">
                         <img src="imgs/piscis.ico" alt="" class="responsive-img"> <!-- notice the "circle" class -->
                     </div>
                     <div class="col s10">
-                        <span class="black-text">
+                        <span>
                             Piscis:<br><br>El duodécimo signo se relaciona con la sensibilidad, la compasión y la conexión emocional con los demás.
                         </span>
                     </div>
@@ -280,20 +282,12 @@
             </div>
         </div>
     </div>
-    <!--Boton Flotante-->
-    <div class="fixed-action-btn">
-        <a class="btn-floating btn-large black">
-            <i class="large material-icons">expand_less</i>
-        </a>
-        <ul>
-            <li><a href="https://instagram.com/astronomia?igshid=YmMyMTA2M2Y=" class="btn-floating grey darken-4"><i class="material-icons">camera_alt</i></a></li>
-        </ul>
-    </div>
-    <div id="Video" class="section scrollspy z-depth-2 hoverable">
+    <!--Comentario de Video-->
+    <div id="Video" class="section scrollspy z-depth-4 hoverable">
         <div class="row">
             <div class="container center">
                 <div class="col s12">
-                    <h3 class="black-text">Explicacion del Horoscopo</h3>
+                    <h3>Explicacion del Horoscopo</h3>
                 </div>
             </div>
         </div>
@@ -304,44 +298,94 @@
             <iframe width="853" height="480" src="vid/Astrología_ por qué nos sirve para entender el mundo actual.mp4" frameborder="0" allowfullscreen></iframe>
         </div>
     </div>
-    <!--Registro-->
-    <div class="col m12">
-        <ul class="collapsible popout section scrollspy" id="Registro">
-            <li>
-            <div class="collapsible-header black-text"><i class="material-icons">filter_drama</i>Registro</div>
-            <div class="collapsible-body grey lighten-3">
-                <div class="row"> 
-                    <form class="col s12">
-                        <div class="row card-panel">
-                            <div class="input-field col s6">
-                                <input type="text" placeholder="Ingrese su nombre" id="Nombre">
-                                <label for="Nombre">Nombre</label>
-                            </div>
-                            <div class="input-field col s6">
-                                <input type="text" placeholder="Ingrese su apellido" id="Apellido">
-                                <label for="Apellido">Apellido</label>
-                            </div>
-                            <div class="input-field col s12">
-                                <input type="email" placeholder="Ingrese su Email" id="Email">
-                                <label for="Email">Email</label>
-                            </div>
-                            <button class="btn waves-effect grey" type="submit" name="action">Enviar
-                                <i class="material-icons right">send</i>
-                            </button>
-                        </div>
-                    </form>
+    <div id="Registro" class="section scrollspy z-depth-4 hoverable">
+        <div class="row">
+            <div class="container center">
+                <div class="col s12">
+                    <h3>Contactenos</h3>
                 </div>
             </div>
-            </li>
-        </ul>
+        </div>
+    </div>
+    <!--Registro-->
+    <div class="section container">
+        <div class="row">
+            <ul class="collapsible popout section scrollspy">
+                <li>
+                    <div class="collapsible-header"><i class="material-icons">filter_drama</i>Registro</div>
+                    <div class="collapsible-body">
+                        <form class="s12" id="FormPrincipal">
+                            <!--Campos de registro-->
+                            <div class="input-field col s6">
+                                <input type="text" placeholder="Ingrese su nombre" id="nombre" class="validate" required>
+                                <label for="nombre">Nombre</label>
+                            </div>
+                            <div class="input-field col s6">
+                                <input type="text" placeholder="Ingrese su apellido" id="apellido" class="validate" required>
+                                <label for="apellido">Apellido</label>
+                            </div>
+                            <div class="input-field col s6">
+                                <input type="text" placeholder="Ingrese su Email" id="email" class="validate" required>
+                                <label for="email">Email</label>
+                            </div>
+                            <div class="input-field col s6">
+                                <input type="text" placeholder="Ingrese su Dirección" id="direccion" class="validate">
+                                <label for="direccion">Dirección</label>
+                            </div>
+                            <div class="input-field col s6">
+                                <input type="number" min="0" pattern="\d+" placeholder="Ingrese su Telefono" id="telefono" class="validate" required>
+                                <label for="telefono">Telefono</label>
+                            </div>
+                            <div class="input-field col s6">
+                                <input type="number" min="1" pattern="\d+" placeholder="Ingrese su Edad" id="edad" class="validate">
+                                <label for="edad">Edad</label>
+                            </div>
+                            <div class="input-field col s6">
+                                <input type="number" min="1" pattern="\d+" placeholder="Ingrese su Celular" id="celular" class="validate">
+                                <label for="celular">Celular</label>
+                            </div>
+                            <div class="input-field col s6">
+                                <p>
+                                    <label>
+                                    <input name="group1" type="radio" id="masculino" value="Masculino" checked/>
+                                    <span>Masculino</span>
+                                    </label>
+                                </p>
+                                <p>
+                                    <label>
+                                    <input name="group1" type="radio" id="femenino" value="Femenino"/>
+                                    <span>Femenino</span>
+                                    </label>
+                                </p>
+                                <p>
+                            </div>
+                            <!--Boton de Registro-->
+                            <div class="input-field col s12">
+                                <button class="btn waves-effect grey" type="button" id="submitBoton">Registrar
+                                    <i class="material-icons right">add</i>
+                                </button>
+                                <!--Boton UP-->
+                                <span id="sBtnAccion"></span>
+                            </div>
+                        </form>
+                        <div class="divider"></div>
+                        <div class="section">
+                            <h1 class="flow-text col s12">Registros</h1>
+                            <!--La Informacion de la Tabla-->
+                            <div id="contenedorTabla"></div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
     </div>
     <!--Pie de Pagina-->
-    <footer class="page-footer grey darken-4">
+    <footer class="page-footer">
         <div class="container">
             <div class="row">
                 <div class="col l6 s12">
                     <h5 class="white-text">Explora el Universo<br></h5>
-                    <a class="grey-text" href="https://policies.google.com/terms?hl=es">Terminos de Condiciones</a>
+                    <a href="https://policies.google.com/terms?hl=es">Terminos de Condiciones</a>
                 </div>
             </div>
         </div>
@@ -353,22 +397,7 @@
         </div>
     </footer>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-    <script>
-    document.addEventListener('DOMContentLoaded', function() {
-        M.AutoInit();
-        });
-    </script>
-    <script>
-        document.addEventListener('DOMContentLoaded', function() {
-        var elems = document.querySelectorAll('.carousel');
-        var instances = M.Carousel.init(elems, {indicators: true});
-        });
-    </script>
-    <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            var elems = document.querySelectorAll('.scrollspy');
-            var instances = M.ScrollSpy.init(elems,{scrollOffset: 0});
-        });
-    </script>
+    <script src="assets/js/materialize.js"></script>
+    <script src="assets/js/script.js"></script>
 </body>
 </html>   
