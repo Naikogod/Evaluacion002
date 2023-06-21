@@ -11,10 +11,11 @@ var cargarTabla = (listadoNuevo)=>{
     let eTelefono = document.getElementById("telefono");
     let eCelular = document.getElementById("celular");
     let eEdad = document.getElementById("edad");
+    let eCiudad = document.getElementById("ciudad");
     //Segundo procedo a crear una etiqueta de tipo tabla que contenga los siguientes parametros con una variable llamada render cuya funcion es indicar que estamos cargando un apartado visual//
     render = "<table>"
     //Terecero enn esta variable le agruegamos un += simbolo de que concadenacion, la variable contiene etiquetas th el cual es utilizada para ver un apartado con los campos que iran dentro en este caso seran los titulos de la tabla//
-    render += "<tr><th>Nombre</th><th>Apellido</th><th>Email</th><th>Direccion</th><th>Telefono</Th><th>Celular</Th><th>Edad</th><th>Accion</th></tr>"
+    render += "<tr><th>Nombre</th><th>Apellido</th><th>Email</th><th>Direccion</th><th>Telefono</Th><th>Celular</Th><th>Edad</th><th>Ciudad</th><th>Accion</th></tr>"
     //Cuarto el for lo que hace es que para i con el valor de 0 se compara si es menor al largo de listado nuevo agregando un i++ lo que hace que al listado nuevo se le agruegue un valor de indice mas, asi por cada objeto de la lista tendra un indice qu eparta en 0 y que se le valla agregugando un valor mas a i asi no se le asigna el mismo valor de indice al objeto//
     for (let i = 0; i < listadoNuevo.length; i++) {
         //Quinto aqui se usa una constante con el proposito de que el valor no cambie y dicho valor es la asigancion de la lista con un indice//
@@ -28,6 +29,7 @@ var cargarTabla = (listadoNuevo)=>{
         render+="<td>"+element.telefono+"</td>";
         render+="<td>"+element.celular+"</td>";
         render+="<td>"+element.edad+"</td>";
+        render+="<td>"+element.ciudad+"</td>";
         //Concadena el id de los botones con el indice en el que esta asignado en la tabla y se le agrega unos efectos para cuando le den click//
         render+="<td>"
         render+="<button id='btnEditar"+i+"' class='btn waves-effect grey'>Editar</button>"
@@ -61,6 +63,7 @@ var cargarTabla = (listadoNuevo)=>{
             eTelefono.value = element.telefono;
             eCelular.value = element.celular;
             eEdad.value = element.edad;
+            eCiudad.value = element.ciudad;
         })
         //Dieciseisavo creo un variable tipo let que contiene la recuperacion del elemento btnEliminar acompañado de un evento listener que al dar click en el ejecuta la funcion//
         var eBtnEliminar = document.getElementById("btnEliminar"+i);
@@ -80,6 +83,7 @@ var cargarTabla = (listadoNuevo)=>{
             eTelefono.value = element.telefono;
             eCelular.value = element.celular;
             eEdad.value = element.edad;
+            eCiudad.value = element.ciudad;
         })
         
         
@@ -96,6 +100,7 @@ var modificar = (listadoNuevo)=>{
     let eTelefono = document.getElementById("telefono");
     let eCelular = document.getElementById("celular");
     let eEdad = document.getElementById("edad");
+    let eCiudad = document.getElementById("ciudad");
     let eBtnEditarUp = document.getElementById("btnEditar");
     //Segundo se crea una varialble que conteine el valor de los elementos//
     let nombre = eNombre.value;
@@ -105,6 +110,7 @@ var modificar = (listadoNuevo)=>{
     let telefono = eTelefono.value;
     let celular = eCelular.value;
     let edad = eEdad.value;
+    let ciudad = eCiudad.value;
     let indice = eBtnEditarUp.value;
     //Tercero accedo al indice del listado nuevo por su valor dentro de este y le digo que su valor cambiara por el nuevo// 
     listadoNuevo[indice].nombre = nombre;
@@ -114,6 +120,7 @@ var modificar = (listadoNuevo)=>{
     listadoNuevo[indice].telefono = telefono;
     listadoNuevo[indice].celular = celular;
     listadoNuevo[indice].edad = edad;
+    listadoNuevo[indice].ciudad = ciudad;
     //Cuarto cargo al al localstorage le cargo los itmes dentro que son alumnos y ademas los modifico a datos tipos json con la funcion de stringify//
     localStorage.setItem('alumnos',JSON.stringify(listadoNuevo))
     //Quinto llamo a la funcion CargarTabla//
@@ -146,6 +153,7 @@ var registrar = ()=>{
     let eTelefono = document.getElementById("telefono");
     let eCelular = document.getElementById("celular");
     let eEdad = document.getElementById("edad");
+    let eCiudad = document.getElementById("ciudad");
     //Segundo se crea una varialble que conteine el valor de los elementos//
     let nombre = eNombre.value;
     let apellido = eApellido.value;
@@ -154,6 +162,7 @@ var registrar = ()=>{
     let telefono = eTelefono.value;
     let celular = eCelular.value;
     let edad = eEdad.value;
+    let ciudad = eCiudad.value;
     let listadoAntiguoStr = localStorage.getItem("alumnos");
     //Tercero creo listadoAntiguo y hago que convierte a listadoAntiguoStr en JSON
     let listaAntiguo = JSON.parse(listadoAntiguoStr);
@@ -161,12 +170,12 @@ var registrar = ()=>{
     console.log(listaAntiguo)
     //Quinto pregunto si listado Antiguo es nulo osea si no tengo registros y hago que una variable llamada persona contenga todos los elementos con un id igual a 0 para que sea la incial//
     if(listaAntiguo==null){
-        let persona = {"id":0,"nombre":nombre,"apellido":apellido,"email":email,"direccion":direccion,"telefono":telefono,"celular":celular,"edad":edad};
+        let persona = {"id":0,"nombre":nombre,"apellido":apellido,"email":email,"direccion":direccion,"telefono":telefono,"celular":celular,"edad":edad,"ciudad":ciudad};
         //Sexto hago que listado nuevo se les pasen los valores de persona//
         var listadoNuevo = [persona]
     //Septimo en caso de que no persona empecara con el id de lasta antigua al cual los valores se le pasaran a listado nuevo//
     }else{
-        let persona = {"id":listaAntiguo.length,"nombre":nombre,"apellido":apellido,"email":email,"direccion":direccion,"telefono":telefono,"celular":celular,"edad":edad};
+        let persona = {"id":listaAntiguo.length,"nombre":nombre,"apellido":apellido,"email":email,"direccion":direccion,"telefono":telefono,"celular":celular,"edad":edad,"ciudad":ciudad};
         var listadoNuevo = [...listaAntiguo,persona]
     }
     //Octavo Mustra en la consola el listado Nuevo//
